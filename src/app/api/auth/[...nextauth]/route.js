@@ -3,7 +3,7 @@ import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import client from "@/lib/db";
 
-export const authOptions = {
+const authOptions = {
   secret: process.env.SECRET,
   adapter: MongoDBAdapter(client),
   // Configure one or more authentication providers
