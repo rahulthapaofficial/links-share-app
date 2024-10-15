@@ -1,7 +1,6 @@
 "use client";
 import SectionBox from "@/components/layout/SectionBox";
 import {
-  faCloudArrowUp,
   faGripLines,
   faLink,
   faPlusCircle,
@@ -15,7 +14,7 @@ import { ReactSortable } from "react-sortablejs";
 import { savePageLinks } from "@/actions/pageActions";
 import toast from "react-hot-toast";
 
-export default function PageLinksForm({ page, user }) {
+export default function PageLinksForm({ page }) {
   const [links, setLinks] = useState(page.links || []);
   async function save() {
     await savePageLinks(links);

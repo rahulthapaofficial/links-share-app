@@ -5,7 +5,6 @@ import RadioTogglers from "@/components/formItems/RadioTogglers";
 import SectionBox from "@/components/layout/SectionBox";
 import {
   faCloudArrowUp,
-  faImage,
   faPalette,
   faSave,
 } from "@fortawesome/free-solid-svg-icons";
@@ -37,11 +36,11 @@ export default function PageSettingsForm({ page, user }) {
       setBgImage(link);
     });
   }
-  async function handleAvatarImageChange(ev) {
-    await upload(ev, (link) => {
-      setAvatar(link);
-    });
-  }
+  // async function handleAvatarImageChange(ev) {
+  //   await upload(ev, (link) => {
+  //     setAvatar(link);
+  //   });
+  // }
   return (
     <div>
       <SectionBox>

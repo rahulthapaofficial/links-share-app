@@ -9,7 +9,6 @@ import {
   faFacebook,
   faGithub,
   faInstagram,
-  faInstagramSquare,
   faTelegram,
   faTiktok,
   faWhatsapp,
@@ -59,7 +58,7 @@ function upperFirst(str) {
   return str.slice(0, 1).toUpperCase() + str.slice(1);
 }
 
-export default function PageButtonsForm({ user, page }) {
+export default function PageButtonsForm({ page }) {
   const pageSavedButtonsKeys = Object.keys(page.buttons);
   const pageSavedButtonsInfo = pageSavedButtonsKeys.map((k) =>
     allButtons.find((b) => b.key === k)

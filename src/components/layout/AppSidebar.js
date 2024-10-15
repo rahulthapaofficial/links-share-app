@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faArrowLeft,
   faChartLine,
   faFileLines,
 } from "@fortawesome/free-solid-svg-icons";
