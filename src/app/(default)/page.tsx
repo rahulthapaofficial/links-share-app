@@ -1,7 +1,7 @@
 import HeroCardDemo from "@/components/cards/HeroCardDemo";
 import HeroForm from "@/components/forms/HeroForm";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/app/api/auth/[...nextauth]/authOptions";
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
