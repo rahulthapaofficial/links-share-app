@@ -34,6 +34,7 @@ export default function PageSettingsForm({ page, user }) {
   async function handleCoverImageChange(ev) {
     await upload(ev, (link) => {
       setBgImage(link);
+      setAvatar("link");
     });
   }
   // async function handleAvatarImageChange(ev) {
