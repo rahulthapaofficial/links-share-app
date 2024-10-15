@@ -24,8 +24,9 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Links Share",
-  description: "Share your link anytime anywhere",
+  title: "Links Share - Your Single Link to Access Everything",
+  description:
+    "Consolidate Your Links, Social Profiles, Contact Information, and More on a Single Page",
 };
 
 export default async function AppTemplate({ children }) {
