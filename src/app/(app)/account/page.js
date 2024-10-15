@@ -1,4 +1,4 @@
-import { authOptions } from "../../api/auth/[...nextauth]/route";
+import { authOptions } from "@/app/api/auth/[...nextauth]/authOptions";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import UsernameForm from "@/components/forms/UsernameForm";
@@ -18,7 +18,7 @@ export default async function AccountPage({ searchParams }) {
   const page = await Page.findOne({ owner: session?.user?.email });
   if (page) {
     const leanPage = cloneDeep(page.toJSON());
-    
+
     leanPage._id = leanPage._id.toString();
     return (
       <>
