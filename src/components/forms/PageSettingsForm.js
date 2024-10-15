@@ -1,7 +1,7 @@
 "use client";
 import { savePageSettings } from "@/actions/pageActions";
 import SubmitButton from "@/components/buttons/SubmitButton";
-import RadioTogglers from "@/components/formItems/radioTogglers";
+import RadioTogglers from "@/components/formItems/RadioTogglers";
 import SectionBox from "@/components/layout/SectionBox";
 import {
   faCloudArrowUp,
