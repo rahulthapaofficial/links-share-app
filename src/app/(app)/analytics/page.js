@@ -1,4 +1,4 @@
-import {authOptions} from "@/app/api/auth/[...nextauth]/route";
+import {authOptions} from "@/app/api/auth/[...nextauth]/authOptions";
 import Chart from "@/components/Chart";
 import SectionBox from "@/components/layout/SectionBox";
 import { Event } from "@/models/Event";
