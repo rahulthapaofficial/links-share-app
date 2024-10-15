@@ -3,7 +3,6 @@ import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import UsernameForm from "@/components/forms/UsernameForm";
 import PageSettingsForm from "@/components/forms/PageSettingsForm";
-import PageButtonsForm from "@/components/forms/PageButtonsForm";
 import PageLinksForm from "@/components/forms/PageLinksForm";
 import { Page } from "@/models/Page";
 import mongoose from "mongoose";
