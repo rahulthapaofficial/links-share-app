@@ -39,7 +39,7 @@ export default async function AppTemplate({
     redirect("/");
   }
 
-  mongoose.connect(process.env.MONGODB_URI);
+  mongoose.connect(process.env.MONGODB_URI as string);
   const page = await Page.findOne({ owner: session?.user?.email });
 
   return (
