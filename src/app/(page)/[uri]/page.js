@@ -58,7 +58,7 @@ export default async function UserPage({ params }) {
           </Link>
         ))}
       </div>
-      <div className="max-w-2xl mx-auto grid md:grid-cols-2 gap-6 p-4 px-8">
+      <div className="max-w-2xl mx-auto grid md:grid-cols-2 gap-6 p-4 px-8 pb-24">
         {page.links.map((link) => (
           <Link
             key={link.url}
@@ -103,7 +103,7 @@ export default async function UserPage({ params }) {
       {/* Floating Join Message */}
       <Link
         href={`/login`}
-        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-green-800 text-white p-4 rounded shadow-lg text-center w-11/12 md:w-1/3 hover:text-blue-200 hover:text-lg transition-all duration-300"
+        className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-green-800 text-white p-4 rounded shadow-lg text-center w-11/12 md:w-1/3 hover:text-blue-200 hover:text-lg transition-all duration-300"
       >
         <h3 className="text-lg hover:text-xl transition-all duration-300">
           Join <span className="font-bold">{page.uri}</span> on Links Share
